@@ -14,10 +14,7 @@ export class AppController {
   @Get()
   async redirect(@Res() resposta: any){
     return resposta.redirect('/swagger')
-<<<<<<< HEAD
     
-=======
->>>>>>> 2eec01ce2873faec7efc5ef06c4e14adb0819220
   }
   
 }
