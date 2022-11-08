@@ -32,7 +32,11 @@ export class UsuarioController {
 
     @Get('/email/:email')
     @HttpCode(HttpStatus.OK)
+<<<<<<< HEAD
     findByEmail(@Param('email') usuario: string): Promise<Usuario[]> {
+=======
+    findByUsuario(@Param('email') usuario: string): Promise<Usuario[]> {
+>>>>>>> 2eec01ce2873faec7efc5ef06c4e14adb0819220
         return this.usuarioService.findByEmail(usuario)
     }
 

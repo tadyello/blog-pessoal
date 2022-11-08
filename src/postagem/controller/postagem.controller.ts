@@ -14,7 +14,11 @@ import { PostagemService } from "../service/postagem.service";
 export class PostagemController {
     constructor(private readonly postagemService: PostagemService) { }
 
+<<<<<<< HEAD
     @Get('/all')
+=======
+    @Get()
+>>>>>>> 2eec01ce2873faec7efc5ef06c4e14adb0819220
     @HttpCode(HttpStatus.OK)
     findAll(): Promise<Postagem[]> {
         return this.postagemService.findAll();

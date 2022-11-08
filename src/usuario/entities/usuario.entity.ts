@@ -35,7 +35,17 @@ export class Usuario {
     @Column({ length: 2000, nullable: false })
     @ApiProperty()
     foto_url: string;
+<<<<<<< HEAD
    
+=======
+
+    @IsNotEmpty()
+    @MaxLength(50)
+    @Column({ length: 50, nullable: false })
+    @ApiProperty()
+    tipo_usuario: string;
+
+>>>>>>> 2eec01ce2873faec7efc5ef06c4e14adb0819220
     @ApiProperty({ type: () => Postagem })
     @OneToMany(() => Postagem, (postagem) => postagem.usuario)
     postagem: Postagem[];

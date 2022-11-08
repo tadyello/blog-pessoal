@@ -6,7 +6,11 @@ export class AppService {
     return 'Olá Mundo!';
   }
   getProjeto(): string {
+<<<<<<< HEAD
     return 'Blog Pessoal';
+=======
+    return 'Mentalize';
+>>>>>>> 2eec01ce2873faec7efc5ef06c4e14adb0819220
   }
   getCidade(): string {
     return 'Rio de Janeiro';

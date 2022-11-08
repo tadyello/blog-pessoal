@@ -9,9 +9,15 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
+<<<<<<< HEAD
     .setTitle('Blog Tadyello')
     .setDescription('Blog Pessoal-Bootcamp Generation Brasil')
     .setContact('Generation Brasil', 'www.brazil.generation.org', 'tadyello@hotmail.com')
+=======
+    .setTitle('Blog Mentalize')
+    .setDescription('Blog Pessoal Bootcamp Generation')
+    .setContact('Generation Brasil', 'tadyello.github.io', 'tadyello@hotmail.com')
+>>>>>>> 2eec01ce2873faec7efc5ef06c4e14adb0819220
     .setVersion('1.0')
     .addBearerAuth()
     .build()

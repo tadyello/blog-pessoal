@@ -12,7 +12,11 @@ import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
   imports: [
+<<<<<<< HEAD
     TypeOrmModule.forRoot({
+=======
+    /*TypeOrmModule.forRoot({
+>>>>>>> 2eec01ce2873faec7efc5ef06c4e14adb0819220
       type: 'mysql',
       host: 'localhost',
       port: 3306,
@@ -21,6 +25,7 @@ import { UsuarioModule } from './usuario/usuario.module';
       database: 'db_blogpessoal',
       entities: [Postagem, Tema, Usuario],
       synchronize: true
+<<<<<<< HEAD
     }),
 
     // TypeOrmModule.forRoot({
@@ -34,6 +39,21 @@ import { UsuarioModule } from './usuario/usuario.module';
     //   synchronize: true,
     //   autoLoadEntities: true,
     // }),
+=======
+    }),*/
+
+    TypeOrmModule.forRoot({
+      type: 'postgres',
+      url: process.env.DATABASE_URL,
+      logging: false,
+      dropSchema: false,
+      ssl: {
+        rejectUnauthorized: false,
+      },
+      synchronize: true,
+      autoLoadEntities: true,
+    }),
+>>>>>>> 2eec01ce2873faec7efc5ef06c4e14adb0819220
     PostagemModule,
     TemaModule,
     UsuarioModule,
