@@ -12,7 +12,7 @@ async function bootstrap() {
     .setTitle('Blog Tadyello')
     .setDescription('Blog Pessoal-Bootcamp Generation Brasil')
     .setContact('Generation Brasil', 'www.brazil.generation.org', 'tadyello@hotmail.com')
-    .setVersion('1.0')
+    .setVersion('1.1')
     .addBearerAuth()
     .build()
     const document = SwaggerModule.createDocument(app, config)
