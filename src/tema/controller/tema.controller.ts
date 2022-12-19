@@ -13,7 +13,7 @@ import { TemaService } from "../service/tema.service";
 export class TemaController {
     constructor(private readonly temaService: TemaService) { }
 
-    @Get('all')
+    @Get('')
     @HttpCode(HttpStatus.OK)
     findAll(): Promise<Tema[]> {
         return this.temaService.findAll(); 
